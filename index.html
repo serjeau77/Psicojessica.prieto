@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Psicóloga Jessica Prieto · Salud Mental y Acompañamiento Terapéutico</title>
   
-  <meta name="description" content="Psicóloga Jessica Prieto · Tarjeta Profesional N.° 223511. Salud Mental y Bienestar Emocional en modalidad Virtual para Colombia y el exterior, y Presencial en Barranquilla. Terapia ética, personalizada y confidencial.">
+  <meta name="description" content="Psicóloga Jessica Prieto · Tarjeta Profesional N.° 223511 (Colpsic). Salud Mental y Bienestar Emocional. Modalidad Virtual para Colombia y el exterior, y Presencial en Barranquilla.">
   <meta name="keywords" content="psicóloga barranquilla, terapia virtual colombia, psicóloga online, jessica prieto psicologa, salud mental, ansiedad, estres laboral, bienestar emocional">
   <meta name="author" content="Jessica Prieto - Psicóloga">
   <meta name="robots" content="index, follow">
@@ -13,17 +13,17 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Psicóloga Jessica Prieto · Salud Mental y Bienestar Emocional">
-  <meta property="og:description" content="Escucha · Comprende · Acompaña. Modalidad Virtual para Colombia y el exterior, y Presencial en Barranquilla. Acompañamiento clínico ético y personalizado.">
+  <meta property="og:description" content="Tu camino al bienestar emocional comienza aquí. Modalidad Virtual para Colombia y el exterior, y Presencial en Barranquilla.">
   <meta property="og:image" content="assets/jessica-prieto.jpg">
   <meta property="og:locale" content="es_CO">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   
-  <!-- Google Fonts: Fraunces (Editorial Serif) & Plus Jakarta Sans (Modern Humanist Sans) -->
+  <!-- Google Fonts: Inter / Plus Jakarta Sans for crisp, clean modern aesthetic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -32,29 +32,20 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
-            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
           },
           colors: {
             brand: {
-              linen: '#FAF8F5',       // Canvas cálido
-              sand: '#F3EDE6',        // Piedra suave
-              cream: '#FFFFFF',       // Superficie pura
-              plum: '#28193D',        // Ciruela profundo
-              wisteria: '#5C3D7E',    // Violeta editorial
-              amethyst: '#7D5BA6',    // Violeta medio
-              lavender: '#F3EEF8',    // Lavanda muy suave
-              terracotta: '#C8785E',  // Arcilla cálida
-              charcoal: '#211D27',    // Texto primario
-              stone: '#6E6676',       // Texto secundario
-              border: '#EAE3DA',      // Borde orgánico
+              purple: '#752AC0',       // Púrpura principal vibrante
+              purpledark: '#581C96',   // Púrpura intenso
+              purpledeep: '#3B1066',   // Púrpura noche para pie/contacto
+              purplelight: '#8E4CE3',  // Púrpura luminoso
+              lilac: '#F3E8FF',        // Lavanda / lila muy suave
+              lilacborder: '#E9D5FF',  // Borde lila sutil
+              slate: '#1E293B',        // Texto principal
+              muted: '#64748B',        // Texto secundario
             }
-          },
-          boxShadow: {
-            'warm-sm': '0 2px 8px -2px rgba(40, 25, 61, 0.05)',
-            'warm-md': '0 8px 24px -4px rgba(40, 25, 61, 0.07)',
-            'warm-lg': '0 16px 36px -6px rgba(40, 25, 61, 0.09)',
-            'glow-violet': '0 0 30px -5px rgba(92, 61, 126, 0.25)',
           }
         }
       }
@@ -66,37 +57,26 @@
 
   <style>
     body {
-      background-color: #FAF8F5;
-      color: #211D27;
+      background-color: #FAFAFD;
+      color: #1E293B;
       font-family: 'Plus Jakarta Sans', sans-serif;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
     }
-    
-    .font-serif-italic {
-      font-family: 'Fraunces', Georgia, serif;
-      font-style: italic;
+
+    /* Vibrant hero gradient matching the reference */
+    .hero-gradient {
+      background: linear-gradient(135deg, #9C67E2 0%, #7D35CD 50%, #6822B8 100%);
     }
 
-    /* Custom subtle ambient glow */
-    .sanctuary-glow {
-      background: radial-gradient(circle at 85% 15%, rgba(92, 61, 126, 0.28), transparent 60%),
-                  radial-gradient(circle at 15% 85%, rgba(200, 120, 94, 0.15), transparent 50%);
+    /* Deep purple gradient for contact */
+    .contact-gradient {
+      background: linear-gradient(135deg, #4A157D 0%, #350B5C 100%);
     }
 
-    /* Subtle custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #FAF8F5;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #D9CEE0;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #BFAECB;
+    /* Custom subtle watermark illustration style */
+    .hero-watermark {
+      background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
     }
 
     details > summary::-webkit-details-marker {
@@ -163,14 +143,14 @@
   }
   </script>
 </head>
-<body class="selection:bg-brand-lavender selection:text-brand-plum">
+<body class="selection:bg-brand-lilac selection:text-brand-purple">
 
   <!-- ================= TOP NOTICE BAR ================= -->
-  <aside class="bg-brand-plum text-white text-xs py-2.5 px-6 border-b border-white/10">
-    <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
-      <div class="flex items-center gap-2 tracking-wide font-normal truncate">
-        <span class="inline-block w-2 h-2 rounded-full bg-violet-400 animate-pulse shrink-0"></span>
-        <span data-i18n="topBarNotice">Modalidad Virtual (Colombia & Exterior) · Presencial Barranquilla · Sujeto a disponibilidad</span>
+  <aside class="bg-brand-purpledeep text-white text-xs py-2 px-6 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2 font-medium truncate">
+        <span class="inline-block w-2 h-2 rounded-full bg-violet-300 animate-pulse shrink-0"></span>
+        <span data-i18n="topBarNotice">Modalidad Virtual (Colombia & Exterior) · Presencial Barranquilla · Sujeto a disponibilidad de agenda</span>
       </div>
       <a href="#contacto" class="underline text-violet-200 hover:text-white transition-colors shrink-0 font-medium hidden sm:inline" data-i18n="topBarLink">
         Solicitar Consulta
@@ -178,47 +158,52 @@
     </div>
   </aside>
 
-  <!-- ================= MAIN HEADER & NAV ================= -->
-  <header class="sticky top-0 z-40 bg-brand-linen/95 backdrop-blur-md border-b border-brand-border/80 transition-all">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+  <!-- ================= MAIN HEADER (WHITE WITH PURPLE BRANDING) ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xs transition-all">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo -->
-      <a href="#top" class="group flex flex-col leading-tight">
-        <span class="text-[11px] uppercase tracking-[0.28em] text-brand-stone font-semibold group-hover:text-brand-wisteria transition-colors">PSICÓLOGA</span>
-        <span class="font-serif text-2xl tracking-tight font-medium text-brand-plum">Jessica Prieto</span>
+      <!-- Brand Logo in Vibrant Purple -->
+      <a href="#top" class="group flex items-center gap-3">
+        <!-- Monogram / Icon -->
+        <div class="w-10 h-10 rounded-xl bg-brand-lilac text-brand-purple flex items-center justify-center font-bold text-lg group-hover:bg-brand-purple group-hover:text-white transition-all shadow-xs">
+          <span>JP</span>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="font-extrabold text-xl tracking-tight text-brand-purple">Jessica Prieto</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-brand-muted font-bold">Psicóloga</span>
+        </div>
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-charcoal">
-        <a href="#metodo" class="hover:text-brand-wisteria transition-colors" data-i18n="navMethod">Método</a>
-        <a href="#especialidades" class="hover:text-brand-wisteria transition-colors" data-i18n="navSpecialties">Acompañamiento</a>
-        <a href="#testimonios" class="hover:text-brand-wisteria transition-colors" data-i18n="navTestimonials">Experiencias</a>
-        <a href="#faq" class="hover:text-brand-wisteria transition-colors" data-i18n="navFAQ">Preguntas</a>
-        <a href="#sobre-mi" class="hover:text-brand-wisteria transition-colors" data-i18n="navAbout">Conóceme</a>
+      <!-- Desktop Nav with Purple Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-brand-purple">
+        <a href="#metodo" class="hover:text-brand-purpledark transition-colors" data-i18n="navMethod">Método</a>
+        <a href="#especialidades" class="hover:text-brand-purpledark transition-colors" data-i18n="navSpecialties">Servicios</a>
+        <a href="#testimonios" class="hover:text-brand-purpledark transition-colors" data-i18n="navTestimonials">Experiencias</a>
+        <a href="#faq" class="hover:text-brand-purpledark transition-colors" data-i18n="navFAQ">Preguntas</a>
+        <a href="#sobre-mi" class="hover:text-brand-purpledark transition-colors" data-i18n="navAbout">Acerca de Mí</a>
       </nav>
 
-      <!-- Language Switch & CTA -->
+      <!-- Language Switch & Solid Purple CTA Button (Like in Reference) -->
       <div class="flex items-center gap-4">
         <!-- Bilingual Switcher -->
-        <div class="inline-flex items-center bg-brand-sand/70 rounded-full p-1 text-xs font-semibold border border-brand-border/60">
-          <button id="lang-es" onclick="switchLanguage('es')" class="px-2.5 py-1 rounded-full bg-white shadow-warm-sm text-brand-plum transition-all">ES</button>
-          <button id="lang-en" onclick="switchLanguage('en')" class="px-2.5 py-1 rounded-full text-brand-stone hover:text-brand-plum transition-all">EN</button>
+        <div class="inline-flex items-center bg-gray-100 rounded-full p-1 text-xs font-bold text-brand-muted">
+          <button id="lang-es" onclick="switchLanguage('es')" class="px-2.5 py-1 rounded-full bg-white shadow-xs text-brand-purple transition-all">ES</button>
+          <button id="lang-en" onclick="switchLanguage('en')" class="px-2.5 py-1 rounded-full text-brand-muted hover:text-brand-purple transition-all">EN</button>
         </div>
 
-        <!-- Header CTA Button -->
+        <!-- Solid Purple Pill Button ("Reservar Cita") -->
         <a 
           href="#contacto" 
-          class="hidden sm:inline-flex items-center gap-2 bg-brand-plum hover:bg-brand-wisteria text-white text-xs font-medium py-2.5 px-5 rounded-full shadow-warm-sm transition-all duration-200"
+          class="hidden sm:inline-flex items-center justify-center bg-brand-purple hover:bg-brand-purpledark text-white text-xs font-bold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
         >
-          <span data-i18n="headerCTA">Agendar Cita</span>
-          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          <span data-i18n="headerCTA">Reservar Cita</span>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
         <button 
           id="mobile-menu-btn"
           onclick="toggleMobileMenu()" 
-          class="md:hidden p-2 rounded-xl text-brand-plum hover:bg-brand-sand/60 transition-colors focus:outline-none"
+          class="md:hidden p-2 rounded-xl text-brand-purple hover:bg-brand-lilac transition-colors focus:outline-none"
           aria-label="Abrir menú"
         >
           <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
@@ -229,27 +214,27 @@
     </div>
 
     <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-brand-border bg-brand-linen/98 backdrop-blur-xl px-6 py-6 transition-all shadow-warm-lg">
-      <nav class="flex flex-col gap-3.5 text-sm font-medium text-brand-charcoal">
-        <a href="#metodo" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-wisteria transition-colors border-b border-brand-border/50 flex items-center justify-between" data-i18n="navMethod">
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white/98 backdrop-blur-xl px-6 py-6 transition-all shadow-xl">
+      <nav class="flex flex-col gap-3.5 text-sm font-semibold text-brand-purple">
+        <a href="#metodo" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-purpledark transition-colors border-b border-gray-100 flex items-center justify-between" data-i18n="navMethod">
           <span>Método Terapéutico</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-stone/50"></i>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-muted"></i>
         </a>
-        <a href="#especialidades" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-wisteria transition-colors border-b border-brand-border/50 flex items-center justify-between" data-i18n="navSpecialties">
-          <span>Áreas de Acompañamiento</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-stone/50"></i>
+        <a href="#especialidades" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-purpledark transition-colors border-b border-gray-100 flex items-center justify-between" data-i18n="navSpecialties">
+          <span>Servicios & Acompañamiento</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-muted"></i>
         </a>
-        <a href="#testimonios" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-wisteria transition-colors border-b border-brand-border/50 flex items-center justify-between" data-i18n="navTestimonials">
+        <a href="#testimonios" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-purpledark transition-colors border-b border-gray-100 flex items-center justify-between" data-i18n="navTestimonials">
           <span>Experiencias</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-stone/50"></i>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-muted"></i>
         </a>
-        <a href="#faq" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-wisteria transition-colors border-b border-brand-border/50 flex items-center justify-between" data-i18n="navFAQ">
+        <a href="#faq" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-purpledark transition-colors border-b border-gray-100 flex items-center justify-between" data-i18n="navFAQ">
           <span>Preguntas Frecuentes</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-stone/50"></i>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-muted"></i>
         </a>
-        <a href="#sobre-mi" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-wisteria transition-colors border-b border-brand-border/50 flex items-center justify-between" data-i18n="navAbout">
-          <span>Conoce a tu Psicóloga</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-stone/50"></i>
+        <a href="#sobre-mi" onclick="toggleMobileMenu(false)" class="py-2.5 hover:text-brand-purpledark transition-colors border-b border-gray-100 flex items-center justify-between" data-i18n="navAbout">
+          <span>Acerca de Mí</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-brand-muted"></i>
         </a>
         
         <div class="pt-4 flex flex-col gap-3">
@@ -257,7 +242,7 @@
             href="https://wa.me/573016128223?text=Hola%20Jessica,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20psicol%C3%B3gica..." 
             target="_blank" 
             onclick="toggleMobileMenu(false)"
-            class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-medium text-xs py-3.5 px-5 rounded-full shadow-warm-sm transition-all"
+            class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs py-3.5 px-5 rounded-full shadow-md transition-all"
           >
             <i data-lucide="message-circle" class="w-4 h-4"></i>
             <span>Conversar por WhatsApp</span>
@@ -265,167 +250,103 @@
           <a 
             href="#contacto" 
             onclick="toggleMobileMenu(false)"
-            class="w-full inline-flex items-center justify-center gap-2 bg-brand-plum text-white font-medium text-xs py-3.5 px-5 rounded-full shadow-warm-sm transition-all"
+            class="w-full inline-flex items-center justify-center gap-2 bg-brand-purple text-white font-bold text-xs py-3.5 px-5 rounded-full shadow-md transition-all"
             data-i18n="headerCTA"
           >
-            <span>Agendar Cita</span>
+            <span>Reservar Cita</span>
           </a>
         </div>
       </nav>
     </div>
   </header>
 
-  <!-- ================= HERO SECTION ================= -->
+  <!-- ================= VIBRANT HERO SECTION (EXACT REFERENCE STYLE) ================= -->
   <main id="top">
-    <section class="max-w-6xl mx-auto px-6 pt-12 pb-16 md:py-24">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <section class="hero-gradient text-white py-20 sm:py-28 lg:py-32 relative overflow-hidden">
+      
+      <!-- Subtle Brain / Mental Health Watermark Vector in the Background -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-15">
+        <svg class="w-[600px] h-[600px] sm:w-[800px] sm:h-[800px] text-white" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Brain / Heart / Connections Network -->
+          <circle cx="100" cy="100" r="70" stroke-dasharray="4 4"/>
+          <path d="M 100 40 C 70 40, 50 65, 50 95 C 50 120, 70 145, 95 155 C 98 156, 102 156, 105 155 C 130 145, 150 120, 150 95 C 150 65, 130 40, 100 40 Z"/>
+          <path d="M 100 40 L 100 155"/>
+          <circle cx="100" cy="40" r="4" fill="currentColor"/>
+          <circle cx="50" cy="95" r="4" fill="currentColor"/>
+          <circle cx="150" cy="95" r="4" fill="currentColor"/>
+          <circle cx="100" cy="155" r="4" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
         
-        <!-- Left: Editorial Narrative & CTA -->
-        <div class="lg:col-span-7 space-y-6">
-          
-          <!-- Category & Status Pill -->
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-lavender/90 text-brand-wisteria text-xs font-semibold border border-brand-wisteria/15 shadow-warm-sm">
-            <span class="w-2 h-2 rounded-full bg-brand-wisteria animate-pulse"></span>
-            <span data-i18n="heroEyebrow">PSICÓLOGA UNIMAGDALENA · M.SC. EN PSICOLOGÍA EN LAS ORGANIZACIONES</span>
-          </div>
-
-          <!-- Main Title -->
-          <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] font-serif text-brand-plum leading-[1.15] tracking-tight">
-            <span data-i18n="heroTitle1">Un espacio seguro para</span><br/>
-            <em class="font-serif-italic font-normal text-brand-wisteria" data-i18n="heroTitle2">sanar, comprenderte y avanzar.</em>
-          </h1>
-
-          <!-- Intro Paragraph -->
-          <p class="text-brand-stone text-base sm:text-lg leading-relaxed max-w-xl" data-i18n="heroIntro">
-            Acompañamiento en <strong>Salud Mental y Bienestar Emocional</strong> por <strong>Jessica Prieto</strong>, psicóloga de la <strong>Universidad del Magdalena</strong> y <strong>Magíster en Psicología en las Organizaciones</strong>. Modalidad <strong>Virtual</strong> para Barranquilla, Colombia y el exterior, y atención <strong>Presencial en Barranquilla</strong> (sujetas a disponibilidad de agenda). Un espacio ético, sin juicios y a tu propio ritmo.
-          </p>
-
-          <!-- Core Principle Badge -->
-          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-brand-sand/60 border border-brand-border text-xs text-brand-charcoal">
-            <span class="font-bold text-brand-terracotta uppercase tracking-wider text-[10px]">ENFOQUE</span>
-            <span class="text-brand-stone font-medium">"Escucha · Comprende · Acompaña"</span>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a 
-              href="https://wa.me/573016128223?text=Hola%20Jessica,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20psicol%C3%B3gica..." 
-              target="_blank" 
-              class="inline-flex items-center justify-center gap-2.5 bg-brand-plum hover:bg-brand-wisteria text-white font-medium text-xs sm:text-sm py-4 px-8 rounded-full shadow-warm-md hover:shadow-warm-lg transition-all duration-200"
-            >
-              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-300"></i>
-              <span data-i18n="heroPrimaryBtn">Agendar Consulta Psicológica</span>
-            </a>
-
-            <a 
-              href="#sobre-mi" 
-              class="inline-flex items-center justify-center gap-2 border border-brand-plum/20 hover:border-brand-wisteria hover:text-brand-wisteria text-brand-plum font-medium text-xs sm:text-sm py-4 px-6 rounded-full transition-all duration-200"
-            >
-              <span data-i18n="heroSecondaryBtn">Conoce a tu Psicóloga</span>
-              <i data-lucide="arrow-down" class="w-4 h-4"></i>
-            </a>
-          </div>
-
-          <!-- Micro-Trust Row -->
-          <div class="pt-3 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-brand-stone">
-            <span class="flex items-center gap-1.5">
-              <i data-lucide="shield-check" class="w-4 h-4 text-brand-wisteria"></i>
-              <span data-i18n="heroTrustTP">Tarjeta Profesional N.° 223511</span>
-            </span>
-            <span class="flex items-center gap-1.5">
-              <i data-lucide="lock" class="w-4 h-4 text-brand-wisteria"></i>
-              <span data-i18n="heroTrust1">Secreto profesional y confidencialidad 100%</span>
-            </span>
-          </div>
-
+        <!-- Credential Micro-Tag -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-semibold mb-6 border border-white/25 shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+          <span data-i18n="heroEyebrow">PSICÓLOGA UNIMAGDALENA · M.SC. EN PSICOLOGÍA EN LAS ORGANIZACIONES · T.P. 223511</span>
         </div>
 
-        <!-- Right: Jessica's Portrait (Single Appearance) -->
-        <div class="lg:col-span-5 relative">
-          <div class="relative max-w-sm mx-auto lg:max-w-none">
-            
-            <!-- Soft Organic Glow Layer -->
-            <div class="absolute -inset-4 bg-gradient-to-tr from-brand-lavender via-brand-sand to-transparent rounded-[3rem] blur-xl opacity-80 -z-10"></div>
+        <!-- Big Bold Title (Matching Reference: "Tu Camino al Bienestar Mental Comienza Aquí") -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6 max-w-4xl mx-auto">
+          <span data-i18n="heroTitle1">Tu Camino al Bienestar</span><br/>
+          <span data-i18n="heroTitle2">Mental Comienza Aquí</span>
+        </h1>
 
-            <!-- Portrait Frame -->
-            <div class="relative rounded-[2.5rem] overflow-hidden border border-brand-border bg-brand-sand/50 shadow-warm-lg">
-              <img 
-                src="assets/jessica-prieto.jpg" 
-                alt="Psicóloga Jessica Prieto Olivares · Salud Mental y Acompañamiento Emocional"
-                width="600"
-                height="800"
-                loading="eager"
-                class="w-full h-auto object-cover aspect-[4/5] filter contrast-[1.02]"
-              >
-              
-              <!-- Refined Floating Credential Badge -->
-              <div class="absolute bottom-5 inset-x-5 p-4 rounded-2xl bg-brand-linen/95 backdrop-blur-md border border-brand-border/80 shadow-warm-md flex items-center justify-between">
-                <div>
-                  <strong class="block text-xs font-bold text-brand-plum">Jessica Prieto</strong>
-                  <span class="text-[11px] text-brand-stone">Psicóloga · T.P. N.° 223511 (Colpsic)</span>
-                </div>
-                <div class="w-8 h-8 rounded-full bg-brand-lavender text-brand-wisteria flex items-center justify-center shrink-0">
-                  <i data-lucide="award" class="w-4 h-4"></i>
-                </div>
-              </div>
-            </div>
+        <!-- Subtitle in Pure White -->
+        <p class="text-white/90 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl mx-auto mb-10" data-i18n="heroIntro">
+          Servicios psicológicos profesionales adaptados a tus necesidades únicas. Modalidad <strong>Virtual</strong> para Colombia y el exterior, y <strong>Presencial en Barranquilla</strong> (sujetas a disponibilidad de agenda).
+        </p>
 
-          </div>
+        <!-- The Two Pill Buttons from Reference (White solid + Transparent outline) -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+          <!-- Button 1: Solid White Pill with Purple Text ("Reservar Cita") -->
+          <a 
+            href="#contacto" 
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-white/95 text-brand-purple font-bold text-sm sm:text-base py-4 px-9 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5"
+          >
+            <span data-i18n="heroPrimaryBtn">Reservar Cita</span>
+          </a>
+
+          <!-- Button 2: Ghost Outline Pill with White Border ("Conocer Más") -->
+          <a 
+            href="#sobre-mi" 
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 font-bold text-sm sm:text-base py-3.5 px-9 rounded-full transition-all"
+          >
+            <span data-i18n="heroSecondaryBtn">Conocer Más</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges Under Hero -->
+        <div class="pt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-sm text-white/85 font-medium">
+          <span class="flex items-center gap-2">
+            <i data-lucide="shield-check" class="w-4 h-4 text-violet-200"></i>
+            <span data-i18n="heroTrustTP">Tarjeta Profesional Colpsic N.° 223511</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i data-lucide="lock" class="w-4 h-4 text-violet-200"></i>
+            <span data-i18n="heroTrust1">Secreto profesional sanitario 100%</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4 text-violet-200"></i>
+            <span data-i18n="proof1Title">Virtual & Presencial Barranquilla</span>
+          </span>
         </div>
 
       </div>
-    </section>
 
-    <!-- ================= EDITORIAL TRUST / PHILOSOPHY STRIP ================= -->
-    <section class="border-y border-brand-border/80 bg-brand-cream/80 py-10">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-brand-border/70">
-          
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-xl bg-brand-lavender text-brand-wisteria flex items-center justify-center shrink-0">
-              <i data-lucide="globe" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-sm font-bold text-brand-plum uppercase tracking-wider mb-1" data-i18n="proof1Title">Virtual & Presencial</h2>
-              <p class="text-xs text-brand-stone leading-relaxed" data-i18n="proof1Desc">Atención virtual para Colombia y el exterior, y consultorio en Barranquilla con cita previa.</p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4 md:pl-8">
-            <div class="w-10 h-10 rounded-xl bg-brand-lavender text-brand-wisteria flex items-center justify-center shrink-0">
-              <i data-lucide="calendar" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-sm font-bold text-brand-plum uppercase tracking-wider mb-1" data-i18n="proof2Title">Flexibilidad de Horarios</h2>
-              <p class="text-xs text-brand-stone leading-relaxed" data-i18n="proof2Desc">Escoge tu horario preferido. Citas programadas según disponibilidad de agenda.</p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4 md:pl-8">
-            <div class="w-10 h-10 rounded-xl bg-brand-lavender text-brand-wisteria flex items-center justify-center shrink-0">
-              <i data-lucide="heart-handshake" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h2 class="text-sm font-bold text-brand-plum uppercase tracking-wider mb-1" data-i18n="proof3Title">Atención Ética & Cercana</h2>
-              <p class="text-xs text-brand-stone leading-relaxed" data-i18n="proof3Desc">Espacio seguro, confidencial y sin juicios, centrado plenamente en tu bienestar y ritmo.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </section>
 
     <!-- ================= METHOD SECTION (EL CAMINO TERAPÉUTICO) ================= -->
-    <section id="metodo" class="py-20 md:py-28">
+    <section id="metodo" class="py-20 md:py-28 bg-white border-b border-gray-100">
       <div class="max-w-6xl mx-auto px-6">
         
         <!-- Section Header -->
         <div class="text-center max-w-2xl mx-auto mb-16">
-          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta mb-2" data-i18n="methodEyebrow">EL CAMINO TERAPÉUTICO</p>
-          <h2 class="text-3xl sm:text-4xl font-serif text-brand-plum leading-tight" data-i18n="methodTitle">
+          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-purple mb-2" data-i18n="methodEyebrow">EL CAMINO TERAPÉUTICO</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight leading-tight" data-i18n="methodTitle">
             Cómo trabajaremos juntos paso a paso
           </h2>
-          <p class="text-brand-stone text-sm mt-3 leading-relaxed" data-i18n="methodSubtitle">
+          <p class="text-brand-muted text-sm sm:text-base mt-3 leading-relaxed" data-i18n="methodSubtitle">
             Un proceso estructurado bajo la premisa de Escuchar, Comprender y Acompañar en modalidad virtual y presencial.
           </p>
         </div>
@@ -434,33 +355,39 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           <!-- Step 1 -->
-          <article class="p-8 rounded-3xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:shadow-warm-md hover:border-brand-wisteria/40 transition-all group flex flex-col justify-between">
+          <article class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-purple/40 hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
             <div>
-              <span class="inline-block font-serif text-4xl text-brand-wisteria/50 group-hover:text-brand-wisteria transition-colors mb-4">01</span>
-              <h3 class="text-xl font-bold text-brand-plum mb-3" data-i18n="methodStep1Title">Escucha & Evaluación Inicial</h3>
-              <p class="text-sm text-brand-charcoal/80 leading-relaxed" data-i18n="methodStep1Desc">
+              <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center font-extrabold text-lg mb-6 group-hover:scale-110 transition-transform">
+                01
+              </div>
+              <h3 class="text-xl font-bold text-brand-slate mb-3" data-i18n="methodStep1Title">Escucha & Evaluación Inicial</h3>
+              <p class="text-sm text-brand-muted leading-relaxed" data-i18n="methodStep1Desc">
                 En tu primera sesión profundizamos en tu historia, identificamos los orígenes del malestar y definimos tus objetivos terapéuticos con total claridad.
               </p>
             </div>
           </article>
 
           <!-- Step 2 -->
-          <article class="p-8 rounded-3xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:shadow-warm-md hover:border-brand-wisteria/40 transition-all group flex flex-col justify-between">
+          <article class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-purple/40 hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
             <div>
-              <span class="inline-block font-serif text-4xl text-brand-terracotta/70 group-hover:text-brand-terracotta transition-colors mb-4">02</span>
-              <h3 class="text-xl font-bold text-brand-plum mb-3" data-i18n="methodStep2Title">Comprensión & Herramientas</h3>
-              <p class="text-sm text-brand-charcoal/80 leading-relaxed" data-i18n="methodStep2Desc">
+              <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center font-extrabold text-lg mb-6 group-hover:scale-110 transition-transform">
+                02
+              </div>
+              <h3 class="text-xl font-bold text-brand-slate mb-3" data-i18n="methodStep2Title">Comprensión & Herramientas</h3>
+              <p class="text-sm text-brand-muted leading-relaxed" data-i18n="methodStep2Desc">
                 Comprenderás las respuestas de tu mente y tu sistema nervioso. Te brindaré técnicas prácticas de regulación emocional, límites asertivos y desarticulación de la autocrítica.
               </p>
             </div>
           </article>
 
           <!-- Step 3 -->
-          <article class="p-8 rounded-3xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:shadow-warm-md hover:border-brand-wisteria/40 transition-all group flex flex-col justify-between">
+          <article class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-purple/40 hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
             <div>
-              <span class="inline-block font-serif text-4xl text-brand-wisteria/50 group-hover:text-brand-wisteria transition-colors mb-4">03</span>
-              <h3 class="text-xl font-bold text-brand-plum mb-3" data-i18n="methodStep3Title">Acompañamiento & Autonomía</h3>
-              <p class="text-sm text-brand-charcoal/80 leading-relaxed" data-i18n="methodStep3Desc">
+              <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center font-extrabold text-lg mb-6 group-hover:scale-110 transition-transform">
+                03
+              </div>
+              <h3 class="text-xl font-bold text-brand-slate mb-3" data-i18n="methodStep3Title">Acompañamiento & Autonomía</h3>
+              <p class="text-sm text-brand-muted leading-relaxed" data-i18n="methodStep3Desc">
                 Te acompaño a consolidar tus nuevas pautas emocionales semana a semana, previniendo recaídas para que desarrolles una autonomía saludable y duradera.
               </p>
             </div>
@@ -471,74 +398,74 @@
       </div>
     </section>
 
-    <!-- ================= ESPECIALIDADES / ÁREAS DE ACOMPAÑAMIENTO ================= -->
-    <section id="especialidades" class="bg-brand-sand/40 border-y border-brand-border/80 py-20 md:py-28">
+    <!-- ================= ESPECIALIDADES / SERVICIOS ================= -->
+    <section id="especialidades" class="py-20 md:py-28 bg-[#F7F5FC]">
       <div class="max-w-6xl mx-auto px-6">
         
         <!-- Section Header -->
         <div class="text-center max-w-2xl mx-auto mb-16">
-          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta mb-2" data-i18n="specEyebrow">SALUD MENTAL & BIENESTAR EMOCIONAL</p>
-          <h2 class="text-3xl sm:text-4xl font-serif text-brand-plum leading-tight" data-i18n="specTitle">
+          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-purple mb-2" data-i18n="specEyebrow">SALUD MENTAL & BIENESTAR EMOCIONAL</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight leading-tight" data-i18n="specTitle">
             ¿En qué puedo acompañarte?
           </h2>
-          <p class="text-brand-stone text-sm mt-3 leading-relaxed" data-i18n="specSubtitle">
+          <p class="text-brand-muted text-sm sm:text-base mt-3 leading-relaxed" data-i18n="specSubtitle">
             No tienes que lidiar con todo en soledad. Estas son las principales áreas de atención psicológica:
           </p>
         </div>
 
-        <!-- 6 Areas (Without titles, designed as an editorial experiential salon) -->
+        <!-- 6 Areas (Clean, Vibrant, without titles) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           
-          <div class="p-7 rounded-2xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:border-brand-wisteria/40 hover:shadow-warm-md transition-all flex flex-col justify-between">
-            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center mb-5">
-              <i data-lucide="activity" class="w-5 h-5"></i>
+          <div class="p-7 rounded-3xl bg-white border border-brand-lilacborder/80 shadow-xs hover:border-brand-purple hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center mb-5">
+              <i data-lucide="activity" class="w-6 h-6"></i>
             </div>
-            <p class="text-sm text-brand-charcoal/90 leading-relaxed font-normal" data-i18n="spec1Desc">
+            <p class="text-sm text-brand-slate leading-relaxed font-medium" data-i18n="spec1Desc">
               Preocupación excesiva constante, sensación de alerta física, palpitaciones y dificultad para apagar la mente.
             </p>
           </div>
 
-          <div class="p-7 rounded-2xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:border-brand-wisteria/40 hover:shadow-warm-md transition-all flex flex-col justify-between">
-            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-800 flex items-center justify-center mb-5">
-              <i data-lucide="sparkle" class="w-5 h-5"></i>
+          <div class="p-7 rounded-3xl bg-white border border-brand-lilacborder/80 shadow-xs hover:border-brand-purple hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center mb-5">
+              <i data-lucide="sparkle" class="w-6 h-6"></i>
             </div>
-            <p class="text-sm text-brand-charcoal/90 leading-relaxed font-normal" data-i18n="spec2Desc">
+            <p class="text-sm text-brand-slate leading-relaxed font-medium" data-i18n="spec2Desc">
               Sensación de insuficiencia, comparación continua, autocrítica severa y necesidad desgastante de aprobación.
             </p>
           </div>
 
-          <div class="p-7 rounded-2xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:border-brand-wisteria/40 hover:shadow-warm-md transition-all flex flex-col justify-between">
-            <div class="w-10 h-10 rounded-xl bg-orange-50 text-orange-800 flex items-center justify-center mb-5">
-              <i data-lucide="flame" class="w-5 h-5"></i>
+          <div class="p-7 rounded-3xl bg-white border border-brand-lilacborder/80 shadow-xs hover:border-brand-purple hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center mb-5">
+              <i data-lucide="flame" class="w-6 h-6"></i>
             </div>
-            <p class="text-sm text-brand-charcoal/90 leading-relaxed font-normal" data-i18n="spec3Desc">
+            <p class="text-sm text-brand-slate leading-relaxed font-medium" data-i18n="spec3Desc">
               Agotamiento mental y físico crónico, desmotivación, sobrecarga laboral y dificultad para desconectar.
             </p>
           </div>
 
-          <div class="p-7 rounded-2xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:border-brand-wisteria/40 hover:shadow-warm-md transition-all flex flex-col justify-between">
-            <div class="w-10 h-10 rounded-xl bg-brand-lavender text-brand-wisteria flex items-center justify-center mb-5">
-              <i data-lucide="heart-crack" class="w-5 h-5"></i>
+          <div class="p-7 rounded-3xl bg-white border border-brand-lilacborder/80 shadow-xs hover:border-brand-purple hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center mb-5">
+              <i data-lucide="heart-crack" class="w-6 h-6"></i>
             </div>
-            <p class="text-sm text-brand-charcoal/90 leading-relaxed font-normal" data-i18n="spec4Desc">
+            <p class="text-sm text-brand-slate leading-relaxed font-medium" data-i18n="spec4Desc">
               Acompañamiento respetuoso ante separaciones de pareja, pérdidas de seres queridos o cambios drásticos de vida.
             </p>
           </div>
 
-          <div class="p-7 rounded-2xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:border-brand-wisteria/40 hover:shadow-warm-md transition-all flex flex-col justify-between">
-            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-800 flex items-center justify-center mb-5">
-              <i data-lucide="users" class="w-5 h-5"></i>
+          <div class="p-7 rounded-3xl bg-white border border-brand-lilacborder/80 shadow-xs hover:border-brand-purple hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center mb-5">
+              <i data-lucide="users" class="w-6 h-6"></i>
             </div>
-            <p class="text-sm text-brand-charcoal/90 leading-relaxed font-normal" data-i18n="spec5Desc">
+            <p class="text-sm text-brand-slate leading-relaxed font-medium" data-i18n="spec5Desc">
               Dificultad para decir 'no', dependencia afectiva, patrones conflictivos recurrentes y comunicación asertiva.
             </p>
           </div>
 
-          <div class="p-7 rounded-2xl bg-brand-cream border border-brand-border/90 shadow-warm-sm hover:border-brand-wisteria/40 hover:shadow-warm-md transition-all flex flex-col justify-between">
-            <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-800 flex items-center justify-center mb-5">
-              <i data-lucide="compass" class="w-5 h-5"></i>
+          <div class="p-7 rounded-3xl bg-white border border-brand-lilacborder/80 shadow-xs hover:border-brand-purple hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-brand-lilac text-brand-purple flex items-center justify-center mb-5">
+              <i data-lucide="compass" class="w-6 h-6"></i>
             </div>
-            <p class="text-sm text-brand-charcoal/90 leading-relaxed font-normal" data-i18n="spec6Desc">
+            <p class="text-sm text-brand-slate leading-relaxed font-medium" data-i18n="spec6Desc">
               Sensación de estancamiento o desorientación, toma de decisiones complejas y reconexión con tu propósito personal.
             </p>
           </div>
@@ -549,47 +476,47 @@
     </section>
 
     <!-- ================= TESTIMONIALS (EXPERIENCIAS REALES) ================= -->
-    <section id="testimonios" class="py-20 md:py-28">
+    <section id="testimonios" class="py-20 md:py-28 bg-white border-b border-gray-100">
       <div class="max-w-6xl mx-auto px-6">
         
         <div class="text-center max-w-2xl mx-auto mb-16">
-          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta mb-2" data-i18n="testEyebrow">EXPERIENCIAS REALES</p>
-          <h2 class="text-3xl sm:text-4xl font-serif text-brand-plum leading-tight" data-i18n="testTitle">
+          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-purple mb-2" data-i18n="testEyebrow">EXPERIENCIAS REALES</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight leading-tight" data-i18n="testTitle">
             Palabras de personas que dieron el paso
           </h2>
-          <p class="text-brand-stone text-xs mt-3" data-i18n="testDisclaimer">
+          <p class="text-brand-muted text-xs mt-3" data-i18n="testDisclaimer">
             * Nombres e iniciales protegidos bajo estricto secreto profesional y confidencialidad ética.
           </p>
         </div>
 
-        <!-- 2 Clean Centered Testimonials -->
+        <!-- 2 Centered Testimonials -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           
-          <div class="p-8 md:p-10 rounded-3xl bg-brand-cream border border-brand-border/90 shadow-warm-sm flex flex-col justify-between relative">
-            <span class="font-serif text-5xl text-brand-wisteria/20 leading-none select-none -mb-3">“</span>
-            <p class="text-sm sm:text-base text-brand-charcoal leading-relaxed italic mb-8 relative z-10" data-i18n="test1Quote">
+          <div class="p-8 rounded-3xl bg-[#FBF9FE] border border-brand-lilacborder/70 shadow-xs flex flex-col justify-between">
+            <span class="font-serif text-5xl text-brand-purple/20 leading-none select-none mb-2">“</span>
+            <p class="text-sm sm:text-base text-brand-slate leading-relaxed italic mb-8" data-i18n="test1Quote">
               "Llegué con crisis de ansiedad muy fuertes y sintiendo que no podía con mi día a día. Jessica me escuchó con tanta calidez y empatía desde el primer minuto que por primera vez en meses sentí un alivio real y la certeza de que no estaba sola en este camino."
             </p>
-            <div class="border-t border-brand-border/60 pt-4 flex items-center justify-between">
+            <div class="border-t border-brand-lilacborder/60 pt-4 flex items-center justify-between">
               <div>
-                <strong class="block text-xs font-bold text-brand-plum">Marta R., 31 años</strong>
-                <span class="text-[11px] text-brand-stone">Superación de Ansiedad</span>
+                <strong class="block text-xs font-bold text-brand-slate">Marta R., 31 años</strong>
+                <span class="text-[11px] text-brand-muted">Superación de Ansiedad</span>
               </div>
-              <span class="text-[10px] uppercase tracking-wider text-brand-wisteria bg-brand-lavender px-2.5 py-1 rounded-full font-semibold">Verificado</span>
+              <span class="text-[10px] uppercase tracking-wider text-brand-purple bg-brand-lilac px-3 py-1 rounded-full font-bold">Verificado</span>
             </div>
           </div>
 
-          <div class="p-8 md:p-10 rounded-3xl bg-brand-cream border border-brand-border/90 shadow-warm-sm flex flex-col justify-between relative">
-            <span class="font-serif text-5xl text-brand-wisteria/20 leading-none select-none -mb-3">“</span>
-            <p class="text-sm sm:text-base text-brand-charcoal leading-relaxed italic mb-8 relative z-10" data-i18n="test2Quote">
+          <div class="p-8 rounded-3xl bg-[#FBF9FE] border border-brand-lilacborder/70 shadow-xs flex flex-col justify-between">
+            <span class="font-serif text-5xl text-brand-purple/20 leading-none select-none mb-2">“</span>
+            <p class="text-sm sm:text-base text-brand-slate leading-relaxed italic mb-8" data-i18n="test2Quote">
               "Al principio dudaba de dar el paso de iniciar terapia, pero la conexión con Jessica fue inmediata y genuina. Me ayudó a comprender lo que me pasaba sin juzgarme y a recuperar la calma en medio del estrés laboral. Ha sido la mejor decisión para mi bienestar."
             </p>
-            <div class="border-t border-brand-border/60 pt-4 flex items-center justify-between">
+            <div class="border-t border-brand-lilacborder/60 pt-4 flex items-center justify-between">
               <div>
-                <strong class="block text-xs font-bold text-brand-plum">Carlos D., 38 años</strong>
-                <span class="text-[11px] text-brand-stone">Manejo de Estrés Laboral</span>
+                <strong class="block text-xs font-bold text-brand-slate">Carlos D., 38 años</strong>
+                <span class="text-[11px] text-brand-muted">Manejo de Estrés Laboral</span>
               </div>
-              <span class="text-[10px] uppercase tracking-wider text-brand-wisteria bg-brand-lavender px-2.5 py-1 rounded-full font-semibold">Verificado</span>
+              <span class="text-[10px] uppercase tracking-wider text-brand-purple bg-brand-lilac px-3 py-1 rounded-full font-bold">Verificado</span>
             </div>
           </div>
 
@@ -599,12 +526,12 @@
     </section>
 
     <!-- ================= FAQ SECTION ================= -->
-    <section id="faq" class="bg-brand-sand/40 border-y border-brand-border/80 py-20 md:py-28">
+    <section id="faq" class="py-20 md:py-28 bg-[#F7F5FC]">
       <div class="max-w-3xl mx-auto px-6">
         
         <div class="text-center mb-16">
-          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta mb-2" data-i18n="faqEyebrow">RESOLVEMOS TUS DUDAS</p>
-          <h2 class="text-3xl sm:text-4xl font-serif text-brand-plum leading-tight" data-i18n="faqTitle">
+          <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-purple mb-2" data-i18n="faqEyebrow">RESOLVEMOS TUS DUDAS</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight leading-tight" data-i18n="faqTitle">
             Preguntas frecuentes sobre la atención psicológica
           </h2>
         </div>
@@ -612,23 +539,23 @@
         <div class="space-y-4">
           
           <!-- FAQ 1 -->
-          <details class="group bg-brand-cream rounded-2xl p-6 border border-brand-border/90 shadow-warm-sm transition-all" open>
-            <summary class="font-bold text-base text-brand-plum cursor-pointer list-none flex items-center justify-between">
+          <details class="group bg-white rounded-2xl p-6 border border-brand-lilacborder/70 shadow-xs transition-all" open>
+            <summary class="font-bold text-base text-brand-slate cursor-pointer list-none flex items-center justify-between">
               <span data-i18n="faq1Q">¿En qué modalidades atiendes y cómo funciona la consulta virtual?</span>
-              <i data-lucide="chevron-down" class="w-5 h-5 text-brand-stone group-open:rotate-180 transition-transform"></i>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-brand-purple group-open:rotate-180 transition-transform"></i>
             </summary>
-            <p class="text-sm text-brand-charcoal/80 leading-relaxed mt-4 pt-4 border-t border-brand-border/50" data-i18n="faq1A">
+            <p class="text-sm text-brand-muted leading-relaxed mt-4 pt-4 border-t border-gray-100" data-i18n="faq1A">
               Ofrezco dos modalidades de atención: <strong>Modalidad Virtual</strong> para consultantes en Barranquilla, toda Colombia y el exterior; y <strong>Modalidad Presencial</strong> en consultorio en Barranquilla, ambas sujetas a disponibilidad de agenda. En modalidad virtual te conectas cómodamente desde tu espacio con el mismo rigor ético y calidez clínica que en presencial.
             </p>
           </details>
 
           <!-- FAQ 2 -->
-          <details class="group bg-brand-cream rounded-2xl p-6 border border-brand-border/90 shadow-warm-sm transition-all">
-            <summary class="font-bold text-base text-brand-plum cursor-pointer list-none flex items-center justify-between">
+          <details class="group bg-white rounded-2xl p-6 border border-brand-lilacborder/70 shadow-xs transition-all">
+            <summary class="font-bold text-base text-brand-slate cursor-pointer list-none flex items-center justify-between">
               <span data-i18n="faq2Q">¿Qué garantía de confidencialidad tengo en una sesión virtual?</span>
-              <i data-lucide="chevron-down" class="w-5 h-5 text-brand-stone group-open:rotate-180 transition-transform"></i>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-brand-purple group-open:rotate-180 transition-transform"></i>
             </summary>
-            <p class="text-sm text-brand-charcoal/80 leading-relaxed mt-4 pt-4 border-t border-brand-border/50" data-i18n="faq2A">
+            <p class="text-sm text-brand-muted leading-relaxed mt-4 pt-4 border-t border-gray-100" data-i18n="faq2A">
               Absoluta. La atención virtual es confidencial y segura. Todo lo conversado está respaldado por el secreto profesional sanitario y el Código Deontológico y Bioético de la Psicología en Colombia. Tu privacidad está 100% protegida.
             </p>
           </details>
@@ -638,81 +565,94 @@
       </div>
     </section>
 
-    <!-- ================= CONOCE A TU PSICÓLOGA (SOBRE MÍ) ================= -->
-    <!-- Positioned intentionally as the final presentation before Contact -->
-    <section id="sobre-mi" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        
-        <!-- Left Column: Presentación & Credenciales Oficiales -->
-        <div class="lg:col-span-5 space-y-6">
-          <div>
-            <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta mb-2" data-i18n="aboutEyebrow">CONOCE A TU PSICÓLOGA</p>
-            <h2 class="text-3xl sm:text-4xl font-serif text-brand-plum leading-tight" data-i18n="aboutTitle">
-              Hola, soy Jessica Prieto.
-            </h2>
-            <div class="mt-3 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-lavender text-brand-wisteria text-xs font-semibold">
-              <span class="w-1.5 h-1.5 rounded-full bg-brand-terracotta"></span>
-              <span>"Escucha · Comprende · Acompaña"</span>
-            </div>
-          </div>
-
-          <!-- Credentials Card -->
-          <div class="p-6 rounded-2xl bg-brand-cream border border-brand-border shadow-warm-sm space-y-3.5">
-            <div class="flex items-center gap-3">
-              <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-wisteria shrink-0"></i>
-              <span class="text-xs font-semibold text-brand-plum" data-i18n="aboutDegree">Psicóloga · Universidad del Magdalena</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <i data-lucide="award" class="w-5 h-5 text-brand-wisteria shrink-0"></i>
-              <span class="text-xs font-semibold text-brand-plum" data-i18n="aboutMaster">Magíster en Psicología en las Organizaciones</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <i data-lucide="shield-check" class="w-5 h-5 text-brand-wisteria shrink-0"></i>
-              <span class="text-xs font-semibold text-brand-plum" data-i18n="aboutLicenseCard">Tarjeta Profesional N.° 223511 · Colegio Colombiano de Psicólogos (Colpsic)</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <i data-lucide="calendar-check" class="w-5 h-5 text-brand-wisteria shrink-0"></i>
-              <span class="text-xs font-semibold text-brand-plum" data-i18n="aboutLicense">Modalidad Virtual & Presencial Barranquilla (Sujeta a disponibilidad)</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Narrative & Approach -->
-        <div class="lg:col-span-7 space-y-6 text-brand-charcoal text-base leading-relaxed">
-
-          <p data-i18n="aboutP1">
-            Sé lo desafiante que puede ser dar el primer paso y buscar ayuda. Muchas personas llegan a consulta con una sobrecarga silenciosa, sintiendo la presión constante de "poder con todo" o cargando un diálogo interno crítico que desgasta su energía vital.
-          </p>
-          <p data-i18n="aboutP2">
-            Soy <strong>psicóloga de la Universidad del Magdalena</strong> y cuento con <strong>Maestría en Psicología en las Organizaciones</strong>, una formación que me permite comprender con profundidad no solo el mundo emocional individual, sino también el impacto que los entornos laborales, el estrés y las dinámicas cotidianas tienen en nuestra salud mental. Ofrezco atención en <strong>modalidad Virtual</strong> para consultantes en toda Colombia y el exterior, además de atención <strong>Presencial en Barranquilla</strong>, con espacios de consulta <strong>sujetos a disponibilidad de agenda</strong> para garantizarte un acompañamiento cercano y ético. Mi compromiso se resume en tres principios: <strong>Escucha, Comprende y Acompaña</strong>.
-          </p>
+    <!-- ================= ACERCA DE MÍ (SOBRE JESSICA PRIETO) ================= -->
+    <!-- Positioned intentionally right before Contact Section -->
+    <section id="sobre-mi" class="py-20 md:py-28 bg-white border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          <blockquote class="border-l-4 border-brand-terracotta pl-6 py-4 my-6 font-serif-italic text-xl text-brand-plum bg-brand-sand/50 rounded-r-2xl leading-relaxed">
-            <span data-i18n="aboutQuote">"La terapia no busca arreglarte porque no estás roto; busca brindarte un lugar seguro donde puedas escucharte, comprenderte y reconstruir tu bienestar emocional con paz y firmeza."</span>
-          </blockquote>
-
-          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a 
-              href="https://wa.me/573016128223?text=Hola%20Jessica,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20psicol%C3%B3gica..." 
-              target="_blank" 
-              class="inline-flex items-center justify-center gap-2.5 bg-brand-plum hover:bg-brand-wisteria text-white font-medium text-xs py-3.5 px-7 rounded-full shadow-warm-sm transition-all"
-            >
-              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-300"></i>
-              <span>Conversar con Jessica por WhatsApp</span>
-            </a>
-
-            <a href="#contacto" class="inline-flex items-center justify-center gap-2 text-brand-plum hover:text-brand-wisteria text-xs font-semibold py-3 px-4 underline">
-              <span>Agendar una consulta</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
+          <!-- Left Column: Portrait of Jessica -->
+          <div class="lg:col-span-5">
+            <div class="relative max-w-sm mx-auto">
+              <!-- Glow -->
+              <div class="absolute -inset-4 bg-brand-lilac rounded-3xl blur-xl opacity-70 -z-10"></div>
+              
+              <div class="rounded-3xl overflow-hidden border-2 border-brand-lilac shadow-xl bg-gray-50">
+                <img 
+                  src="assets/jessica-prieto.jpg" 
+                  alt="Psicóloga Jessica Prieto Olivares"
+                  width="600"
+                  height="800"
+                  class="w-full h-auto object-cover aspect-[4/5]"
+                >
+                <div class="p-5 bg-white border-t border-gray-100">
+                  <strong class="block text-sm font-bold text-brand-slate">Jessica Prieto</strong>
+                  <span class="text-xs text-brand-purple font-semibold">Psicóloga · T.P. N.° 223511 (Colpsic)</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
+          <!-- Right Column: Presentation & Narrative -->
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-purple mb-2" data-i18n="aboutEyebrow">CONOCE A TU PSICÓLOGA</p>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight leading-tight" data-i18n="aboutTitle">
+                Hola, soy Jessica Prieto.
+              </h2>
+              <div class="mt-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-lilac text-brand-purple text-xs font-bold">
+                <span class="w-2 h-2 rounded-full bg-brand-purple"></span>
+                <span>"Escucha · Comprende · Acompaña"</span>
+              </div>
+            </div>
+
+            <!-- Credentials Badges -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3.5 rounded-xl bg-[#FBF9FE] border border-brand-lilacborder/70 flex items-center gap-3">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-purple shrink-0"></i>
+                <span class="text-xs font-bold text-brand-slate" data-i18n="aboutDegree">Universidad del Magdalena</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#FBF9FE] border border-brand-lilacborder/70 flex items-center gap-3">
+                <i data-lucide="award" class="w-5 h-5 text-brand-purple shrink-0"></i>
+                <span class="text-xs font-bold text-brand-slate" data-i18n="aboutMaster">Magíster en Psicología Org.</span>
+              </div>
+            </div>
+
+            <p class="text-brand-slate text-sm sm:text-base leading-relaxed" data-i18n="aboutP1">
+              Sé lo desafiante que puede ser dar el primer paso y buscar ayuda. Muchas personas llegan a consulta con una sobrecarga silenciosa, sintiendo la presión constante de "poder con todo" o cargando un diálogo interno crítico que desgasta su energía vital.
+            </p>
+            <p class="text-brand-slate text-sm sm:text-base leading-relaxed" data-i18n="aboutP2">
+              Soy <strong>psicóloga de la Universidad del Magdalena</strong> y cuento con <strong>Maestría en Psicología en las Organizaciones</strong>, una formación que me permite comprender con profundidad no solo el mundo emocional individual, sino también el impacto que los entornos laborales, el estrés y las dinámicas cotidianas tienen en nuestra salud mental. Ofrezco atención en <strong>modalidad Virtual</strong> para consultantes en toda Colombia y el exterior, además de atención <strong>Presencial en Barranquilla</strong>, con espacios de consulta <strong>sujetos a disponibilidad de agenda</strong> para garantizarte un acompañamiento cercano y ético. Mi compromiso se resume en tres principios: <strong>Escucha, Comprende y Acompaña</strong>.
+            </p>
+            
+            <blockquote class="border-l-4 border-brand-purple pl-6 py-4 my-4 font-serif italic text-lg sm:text-xl text-brand-purple bg-brand-lilac/50 rounded-r-2xl leading-relaxed">
+              <span data-i18n="aboutQuote">"La terapia no busca arreglarte porque no estás roto; busca brindarte un lugar seguro donde puedas escucharte, comprenderte y reconstruir tu bienestar emocional con paz y firmeza."</span>
+            </blockquote>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a 
+                href="https://wa.me/573016128223?text=Hola%20Jessica,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20psicol%C3%B3gica..." 
+                target="_blank" 
+                class="inline-flex items-center justify-center gap-2.5 bg-brand-purple hover:bg-brand-purpledark text-white font-bold text-xs py-3.5 px-7 rounded-full shadow-md transition-all"
+              >
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Conversar con Jessica por WhatsApp</span>
+              </a>
+
+              <a href="#contacto" class="inline-flex items-center justify-center gap-2 text-brand-purple hover:text-brand-purpledark text-xs font-bold py-3 px-4 underline">
+                <span>Agendar una consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- ================= CONTACT & BOOKING SECTION (SANCTUARY) ================= -->
-    <section id="contacto" class="bg-[#241738] text-white py-20 md:py-28 relative overflow-hidden sanctuary-glow">
+    <!-- ================= CONTACT & BOOKING SECTION (DEEP PURPLE SANCTUARY) ================= -->
+    <section id="contacto" class="contact-gradient text-white py-20 md:py-28 relative overflow-hidden">
       <div class="max-w-6xl mx-auto px-6 relative z-10">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -720,16 +660,16 @@
           <!-- Left: Big CTA & Reassurance -->
           <div class="lg:col-span-5 space-y-6">
             <p class="text-xs font-bold uppercase tracking-[0.25em] text-violet-300" data-i18n="contactEyebrow">ESTOY AQUÍ PARA ESCUCHARTE Y ACOMPAÑARTE</p>
-            <h2 class="text-4xl sm:text-5xl font-serif text-white leading-tight">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight tracking-tight">
               <span data-i18n="contactTitle1">Dar el primer paso</span><br/>
-              <em class="font-serif-italic font-normal text-violet-200" data-i18n="contactTitle2">es un acto de valentía.</em>
+              <span class="text-violet-200" data-i18n="contactTitle2">es un acto de valentía.</span>
             </h2>
-            <p class="text-violet-100/80 text-sm leading-relaxed max-w-md" data-i18n="contactSubtitle">
+            <p class="text-violet-100/90 text-sm leading-relaxed max-w-md" data-i18n="contactSubtitle">
               Conversemos. Elige la modalidad y el horario que mejor se adapten a tu rutina, y coordinaremos tu cita con calidez y prontitud.
             </p>
 
             <!-- Modalidades y Estado de Agenda -->
-            <div class="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3 text-xs backdrop-blur-sm">
+            <div class="p-5 rounded-2xl bg-white/10 border border-white/15 space-y-3 text-xs backdrop-blur-sm">
               <div class="flex items-center justify-between pb-2 border-b border-white/10">
                 <span class="font-bold text-violet-200 flex items-center gap-2">
                   <i data-lucide="calendar-check" class="w-4 h-4"></i>
@@ -753,7 +693,7 @@
               <a 
                 href="https://wa.me/573016128223?text=Hola%20Jessica,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20psicol%C3%B3gica..." 
                 target="_blank" 
-                class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-sm py-4 px-8 rounded-full shadow-lg transition-all"
+                class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-sm py-4 px-8 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5"
               >
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
                 <span data-i18n="contactWABtn">Escribir por WhatsApp a Jessica</span>
@@ -780,42 +720,42 @@
 
           <!-- Right: Refined Booking Form -->
           <div class="lg:col-span-7">
-            <div class="p-8 sm:p-10 rounded-3xl bg-white/[0.07] border border-white/10 backdrop-blur-md shadow-2xl">
+            <div class="p-8 sm:p-10 rounded-3xl bg-white/[0.08] border border-white/15 backdrop-blur-md shadow-2xl">
               
               <div class="mb-6">
-                <h3 class="font-serif text-2xl text-white mb-1" data-i18n="formTitle">Solicitud de Consulta Psicológica</h3>
+                <h3 class="text-2xl font-bold text-white mb-1" data-i18n="formTitle">Solicitud de Consulta Psicológica</h3>
                 <p class="text-xs text-violet-200/80" data-i18n="formSubtitle">Completa tus datos y coordinaremos tu cita con calidez vía WhatsApp.</p>
               </div>
 
               <form id="contact-form" onsubmit="handleBookingSubmit(event)" class="space-y-4 text-xs">
                 
                 <div>
-                  <label class="block font-medium text-violet-100 mb-1" data-i18n="formName">Nombre completo *</label>
+                  <label class="block font-semibold text-violet-100 mb-1" data-i18n="formName">Nombre completo *</label>
                   <input type="text" id="form-name" required placeholder="Tu nombre y apellido" class="w-full p-3.5 rounded-xl bg-white/10 border border-white/15 focus:border-violet-300 focus:bg-white/15 outline-hidden text-sm text-white placeholder-white/40 transition-all">
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block font-medium text-violet-100 mb-1" data-i18n="formPhone">Teléfono / WhatsApp *</label>
+                    <label class="block font-semibold text-violet-100 mb-1" data-i18n="formPhone">Teléfono / WhatsApp *</label>
                     <input type="tel" id="form-phone" required placeholder="+57 300 000 0000" class="w-full p-3.5 rounded-xl bg-white/10 border border-white/15 focus:border-violet-300 focus:bg-white/15 outline-hidden text-sm text-white placeholder-white/40 transition-all">
                   </div>
                   <div>
-                    <label class="block font-medium text-violet-100 mb-1" data-i18n="formEmail">Email *</label>
+                    <label class="block font-semibold text-violet-100 mb-1" data-i18n="formEmail">Email *</label>
                     <input type="email" id="form-email" required placeholder="tu-correo@ejemplo.com" class="w-full p-3.5 rounded-xl bg-white/10 border border-white/15 focus:border-violet-300 focus:bg-white/15 outline-hidden text-sm text-white placeholder-white/40 transition-all">
                   </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block font-medium text-violet-100 mb-1" data-i18n="formModality">Modalidad</label>
-                    <select id="form-modality" class="w-full p-3.5 rounded-xl bg-brand-plum text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
+                    <label class="block font-semibold text-violet-100 mb-1" data-i18n="formModality">Modalidad</label>
+                    <select id="form-modality" class="w-full p-3.5 rounded-xl bg-brand-purpledeep text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
                       <option value="Virtual" selected>💻 Virtual (Colombia y Exterior)</option>
                       <option value="Presencial (Barranquilla)">🏛️ Presencial (Barranquilla)</option>
                     </select>
                   </div>
                   <div>
-                    <label class="block font-medium text-violet-100 mb-1" data-i18n="formService">Tipo de Consulta</label>
-                    <select id="form-service" class="w-full p-3.5 rounded-xl bg-brand-plum text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
+                    <label class="block font-semibold text-violet-100 mb-1" data-i18n="formService">Tipo de Consulta</label>
+                    <select id="form-service" class="w-full p-3.5 rounded-xl bg-brand-purpledeep text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
                       <option value="Primera Consulta / Valoración Inicial" selected>Primera Consulta / Valoración Inicial</option>
                       <option value="Acompañamiento Terapéutico Continuo">Acompañamiento Terapéutico Continuo</option>
                       <option value="Orientación Emocional Puntual">Orientación Emocional Puntual</option>
@@ -825,12 +765,12 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block font-medium text-violet-100 mb-1" data-i18n="formDate">Fecha deseada (opcional)</label>
-                    <input type="date" id="form-date" class="w-full p-3.5 rounded-xl bg-brand-plum text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
+                    <label class="block font-semibold text-violet-100 mb-1" data-i18n="formDate">Fecha deseada (opcional)</label>
+                    <input type="date" id="form-date" class="w-full p-3.5 rounded-xl bg-brand-purpledeep text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
                   </div>
                   <div>
-                    <label class="block font-medium text-violet-100 mb-1" data-i18n="formPreferredTime">Horario preferido</label>
-                    <select id="form-time" class="w-full p-3.5 rounded-xl bg-brand-plum text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
+                    <label class="block font-semibold text-violet-100 mb-1" data-i18n="formPreferredTime">Horario preferido</label>
+                    <select id="form-time" class="w-full p-3.5 rounded-xl bg-brand-purpledeep text-white border border-white/15 focus:border-violet-300 outline-hidden text-sm font-medium">
                       <option value="Cualquier horario disponible" selected>Cualquier horario disponible</option>
                       <option value="Mañana (8:00 AM - 12:00 PM)">Mañana (8:00 AM - 12:00 PM)</option>
                       <option value="Tarde (2:00 PM - 5:00 PM)">Tarde (2:00 PM - 5:00 PM)</option>
@@ -840,14 +780,14 @@
                   </div>
                 </div>
 
-                <!-- Friendly Availability Callout -->
+                <!-- Availability Callout -->
                 <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-[11px] text-violet-200/90 leading-relaxed">
                   <span class="font-bold text-violet-100 block mb-0.5">ℹ️ Nota de Disponibilidad:</span>
                   <span data-i18n="formAgendaNotice">Los espacios de consulta están sujetos a disponibilidad de agenda. Si requieres un horario específico o una franja diferente, indícalo y con gusto coordinaremos la opción disponible para ti.</span>
                 </div>
 
                 <div>
-                  <label class="block font-medium text-violet-100 mb-1" data-i18n="formMessage">Motivo de consulta (opcional)</label>
+                  <label class="block font-semibold text-violet-100 mb-1" data-i18n="formMessage">Motivo de consulta (opcional)</label>
                   <textarea id="form-notes" rows="3" placeholder="Si deseas compartir brevemente cómo te sientes o qué buscas trabajar..." class="w-full p-3.5 rounded-xl bg-white/10 border border-white/15 focus:border-violet-300 focus:bg-white/15 outline-hidden text-sm text-white placeholder-white/40 resize-none transition-all"></textarea>
                 </div>
 
@@ -857,14 +797,14 @@
                     <input type="checkbox" id="form-consent" required class="mt-0.5 rounded-sm text-violet-500 focus:ring-violet-400">
                     <span>
                       <span data-i18n="formConsent1">He leído y acepto la</span>
-                      <button type="button" onclick="openLegalModal('privacy')" class="underline text-white font-medium hover:text-violet-200" data-i18n="formConsentLink">Política de Tratamiento de Datos Personales</button>
+                      <button type="button" onclick="openLegalModal('privacy')" class="underline text-white font-bold hover:text-violet-200" data-i18n="formConsentLink">Política de Tratamiento de Datos Personales</button>
                       <span data-i18n="formConsent2">y autorizo el manejo confidencial de mi información bajo la Ley 1581 de 2012 y el Código Deontológico de Psicología en Colombia. *</span>
                     </span>
                   </label>
                 </div>
 
                 <div class="pt-2">
-                  <button type="submit" class="w-full bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 text-sm">
+                  <button type="submit" class="w-full bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold py-4 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm">
                     <i data-lucide="message-circle" class="w-4 h-4"></i>
                     <span data-i18n="formSubmit">Solicitar Cita por WhatsApp</span>
                   </button>
@@ -881,23 +821,40 @@
     </section>
   </main>
 
+  <!-- ================= COOKIE BANNER (MATCHING THE PURPLE REFERENCE BAR) ================= -->
+  <aside id="cookie-banner" class="fixed bottom-0 inset-x-0 z-40 bg-brand-purpledeep text-white text-xs py-3.5 px-6 border-t border-white/10 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/80 leading-relaxed text-center sm:text-left">
+        Usamos cookies propias y de terceros para brindarte la mejor experiencia en nuestro sitio y garantizar la privacidad de tus datos bajo la Ley 1581 de 2012. Más información en nuestra <button onclick="openLegalModal('privacy')" class="underline text-white font-semibold">Política de Privacidad</button>.
+      </p>
+      <div class="flex items-center gap-3 shrink-0">
+        <button onclick="dismissCookies()" class="px-5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-colors">
+          Rechazar
+        </button>
+        <button onclick="dismissCookies()" class="px-5 py-1.5 rounded-full bg-white text-brand-purple font-bold hover:bg-white/90 transition-colors shadow-sm">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </aside>
+
   <!-- ================= FOOTER ================= -->
-  <footer class="bg-brand-linen border-t border-brand-border py-12 text-xs text-brand-stone">
+  <footer class="bg-white border-t border-gray-100 py-12 text-xs text-brand-muted pb-24 sm:pb-12">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         
         <div>
-          <span class="font-serif text-lg font-medium text-brand-plum block">Jessica Prieto</span>
+          <span class="font-extrabold text-lg text-brand-purple block">Jessica Prieto</span>
           <p class="text-[11px] mt-0.5" data-i18n="footerTagline">Salud Mental, Psicología y Bienestar Emocional · "Escucha · Comprende · Acompaña"</p>
-          <p class="text-[10px] text-brand-stone/80 mt-1">Tarjeta Profesional N.° 223511 · Colegio Colombiano de Psicólogos (Colpsic / RETHUS)</p>
+          <p class="text-[10px] text-brand-muted mt-1">Tarjeta Profesional N.° 223511 · Colegio Colombiano de Psicólogos (Colpsic / RETHUS)</p>
         </div>
 
-        <div class="flex flex-wrap items-center gap-5 text-brand-stone">
-          <button type="button" onclick="openLegalModal('legal')" class="hover:text-brand-plum transition-colors" data-i18n="footerLegal">Aviso Legal</button>
+        <div class="flex flex-wrap items-center gap-5 text-brand-muted font-medium">
+          <button type="button" onclick="openLegalModal('legal')" class="hover:text-brand-purple transition-colors" data-i18n="footerLegal">Aviso Legal</button>
           <span>·</span>
-          <button type="button" onclick="openLegalModal('privacy')" class="hover:text-brand-plum transition-colors" data-i18n="footerPrivacy">Política de Privacidad</button>
+          <button type="button" onclick="openLegalModal('privacy')" class="hover:text-brand-purple transition-colors" data-i18n="footerPrivacy">Política de Privacidad</button>
           <span>·</span>
-          <button type="button" onclick="openLegalModal('cookies')" class="hover:text-brand-plum transition-colors" data-i18n="footerCookies">Cookies</button>
+          <button type="button" onclick="openLegalModal('cookies')" class="hover:text-brand-purple transition-colors" data-i18n="footerCookies">Cookies</button>
         </div>
 
         <p class="text-[11px]">
@@ -908,7 +865,7 @@
     </div>
   </footer>
 
-  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <!-- ================= FLOATING WHATSAPP BUTTON (MATCHING REFERENCE) ================= -->
   <a 
     href="https://wa.me/573016128223?text=Hola%20Jessica,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20psicol%C3%B3gica..." 
     target="_blank" 
@@ -918,37 +875,37 @@
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
-  <!-- ================= LEGAL MODAL (HABEAS DATA / PRIVACY) ================= -->
+  <!-- ================= LEGAL MODAL ================= -->
   <div id="legal-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 transition-all">
-    <div class="bg-brand-linen w-full max-w-2xl max-h-[85vh] rounded-3xl shadow-2xl border border-brand-border flex flex-col overflow-hidden">
+    <div class="bg-white w-full max-w-2xl max-h-[85vh] rounded-3xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden">
       
       <!-- Modal Header -->
-      <div class="px-6 py-5 border-b border-brand-border flex items-center justify-between bg-brand-sand/50">
+      <div class="px-6 py-5 border-b border-gray-100 flex items-center justify-between bg-gray-50">
         <div>
-          <h3 class="font-serif text-xl font-bold text-brand-plum">Marco Legal y Confidencialidad</h3>
-          <p class="text-xs text-brand-stone">Ley 1581 de 2012 (Habeas Data) y Ley 1090 de 2006 (Código Deontológico)</p>
+          <h3 class="text-xl font-bold text-brand-slate">Marco Legal y Confidencialidad</h3>
+          <p class="text-xs text-brand-muted">Ley 1581 de 2012 (Habeas Data) y Ley 1090 de 2006 (Código Deontológico)</p>
         </div>
-        <button onclick="closeLegalModal()" class="w-8 h-8 rounded-full bg-brand-cream border border-brand-border flex items-center justify-center text-brand-stone hover:text-brand-plum hover:bg-brand-sand transition-colors">
+        <button onclick="closeLegalModal()" class="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-brand-muted hover:text-brand-purple transition-colors">
           <i data-lucide="x" class="w-4 h-4"></i>
         </button>
       </div>
 
       <!-- Modal Tabs -->
-      <div class="flex border-b border-brand-border px-6 text-xs font-semibold bg-brand-linen">
-        <button id="tab-privacy-btn" onclick="switchLegalTab('privacy')" class="py-3 px-4 border-b-2 border-brand-plum text-brand-plum">Tratamiento de Datos</button>
-        <button id="tab-deont-btn" onclick="switchLegalTab('deont')" class="py-3 px-4 border-b-2 border-transparent text-brand-stone hover:text-brand-plum">Secreto Profesional</button>
-        <button id="tab-terms-btn" onclick="switchLegalTab('terms')" class="py-3 px-4 border-b-2 border-transparent text-brand-stone hover:text-brand-plum">Términos y Citas</button>
+      <div class="flex border-b border-gray-100 px-6 text-xs font-bold bg-white">
+        <button id="tab-privacy-btn" onclick="switchLegalTab('privacy')" class="py-3 px-4 border-b-2 border-brand-purple text-brand-purple">Tratamiento de Datos</button>
+        <button id="tab-deont-btn" onclick="switchLegalTab('deont')" class="py-3 px-4 border-b-2 border-transparent text-brand-muted hover:text-brand-purple">Secreto Profesional</button>
+        <button id="tab-terms-btn" onclick="switchLegalTab('terms')" class="py-3 px-4 border-b-2 border-transparent text-brand-muted hover:text-brand-purple">Términos y Citas</button>
       </div>
 
       <!-- Modal Content Body -->
-      <div class="p-6 overflow-y-auto space-y-4 text-xs text-brand-charcoal/90 leading-relaxed">
+      <div class="p-6 overflow-y-auto space-y-4 text-xs text-brand-slate leading-relaxed">
         
         <div id="tab-privacy-content" class="space-y-3">
-          <h4 class="font-bold text-sm text-brand-plum">1. Política de Tratamiento de Datos Personales (Ley 1581 de 2012)</h4>
+          <h4 class="font-bold text-sm text-brand-purple">1. Política de Tratamiento de Datos Personales (Ley 1581 de 2012)</h4>
           <p>
             En cumplimiento de la <strong>Ley Estatutaria 1581 de 2012</strong> y el Decreto 1377 de 2013 de la República de Colombia, la psicóloga <strong>Jessica Prieto</strong> (T.P. N.° 223511), en calidad de Responsable del Tratamiento de Datos Personales, informa que los datos suministrados a través de los formularios o canales de contacto serán tratados bajo estrictas medidas de seguridad técnica y confidencialidad clínica.
           </p>
-          <ul class="list-disc pl-5 space-y-1 text-brand-stone">
+          <ul class="list-disc pl-5 space-y-1 text-brand-muted">
             <li><strong>Finalidad:</strong> Coordinación de citas terapéuticas, contacto profesional directo y apertura de historia clínica confidencial cuando aplique.</li>
             <li><strong>Naturaleza de los datos:</strong> Datos de contacto general y datos de salud (clasificados como datos sensibles), los cuales gozan de especial protección legal.</li>
             <li><strong>Derechos del Titular:</strong> Puedes conocer, actualizar, rectificar o revocar la autorización de tus datos en cualquier momento enviando una solicitud a <code>jessicaprietolivares@gmail.com</code>.</li>
@@ -956,19 +913,19 @@
         </div>
 
         <div id="tab-deont-content" class="space-y-3 hidden">
-          <h4 class="font-bold text-sm text-brand-plum">2. Secreto Profesional y Código Deontológico (Ley 1090 de 2006)</h4>
+          <h4 class="font-bold text-sm text-brand-purple">2. Secreto Profesional y Código Deontológico (Ley 1090 de 2006)</h4>
           <p>
             El ejercicio profesional de la psicología en Colombia se rige por la <strong>Ley 1090 de 2006</strong> (Código Deontológico y Bioético de la Psicología).
           </p>
-          <ul class="list-disc pl-5 space-y-1 text-brand-stone">
+          <ul class="list-disc pl-5 space-y-1 text-brand-muted">
             <li><strong>Confidencialidad Absoluta:</strong> Todo lo compartido en sesiones virtuales o presenciales está protegido bajo el secreto profesional sanitario. La psicóloga no revelará información a terceros sin tu consentimiento expreso y por escrito.</li>
             <li><strong>Excepciones Legales:</strong> El secreto profesional solo se levantará ante riesgo inminente y grave para la vida o integridad física del consultante o de terceros, conforme al marco legal colombiano.</li>
           </ul>
         </div>
 
         <div id="tab-terms-content" class="space-y-3 hidden">
-          <h4 class="font-bold text-sm text-brand-plum">3. Términos del Servicio y Política de Cancelación</h4>
-          <ul class="list-disc pl-5 space-y-1 text-brand-stone">
+          <h4 class="font-bold text-sm text-brand-purple">3. Términos del Servicio y Política de Cancelación</h4>
+          <ul class="list-disc pl-5 space-y-1 text-brand-muted">
             <li><strong>Duración:</strong> Cada sesión tiene una duración de 50 minutos.</li>
             <li><strong>Puntualidad:</strong> Se solicita puntualidad para aprovechar el tiempo clínico asignado.</li>
             <li><strong>Política de Cancelación y Reprogramación:</strong> Para reprogramar o cancelar una sesión sin costo, debes notificar con un mínimo de <strong>24 horas de antelación</strong>. Esto permite brindar el espacio a otra persona que lo necesite.</li>
@@ -978,8 +935,8 @@
       </div>
 
       <!-- Modal Footer -->
-      <div class="px-6 py-4 bg-brand-sand/50 border-t border-brand-border flex justify-end">
-        <button onclick="closeLegalModal()" class="px-5 py-2 rounded-full bg-brand-plum hover:bg-brand-wisteria text-white text-xs font-semibold transition-colors">
+      <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 flex justify-end">
+        <button onclick="closeLegalModal()" class="px-5 py-2 rounded-full bg-brand-purple hover:bg-brand-purpledark text-white text-xs font-bold transition-colors">
           Cerrar
         </button>
       </div>
@@ -995,28 +952,23 @@
     // ================= DICCIONARIO BILINGÜE (ES / EN) =================
     const translations = {
       es: {
-        topBarNotice: "Modalidad Virtual (Colombia & Exterior) · Presencial Barranquilla · Sujeto a disponibilidad",
+        topBarNotice: "Modalidad Virtual (Colombia & Exterior) · Presencial Barranquilla · Sujeto a disponibilidad de agenda",
         topBarLink: "Solicitar Consulta",
         navMethod: "Método",
-        navSpecialties: "Acompañamiento",
+        navSpecialties: "Servicios",
         navTestimonials: "Experiencias",
         navFAQ: "Preguntas",
-        navAbout: "Conóceme",
-        headerCTA: "Agendar Cita",
-        heroEyebrow: "PSICÓLOGA UNIMAGDALENA · M.SC. EN PSICOLOGÍA EN LAS ORGANIZACIONES",
-        heroTitle1: "Un espacio seguro para",
-        heroTitle2: "sanar, comprenderte y avanzar.",
-        heroIntro: "Acompañamiento en <strong>Salud Mental y Bienestar Emocional</strong> por <strong>Jessica Prieto</strong>, psicóloga de la <strong>Universidad del Magdalena</strong> y <strong>Magíster en Psicología en las Organizaciones</strong>. Modalidad <strong>Virtual</strong> para Barranquilla, Colombia y el exterior, y atención <strong>Presencial en Barranquilla</strong> (sujetas a disponibilidad de agenda). Un espacio ético, sin juicios y a tu propio ritmo.",
-        heroPrimaryBtn: "Agendar Consulta Psicológica",
-        heroSecondaryBtn: "Conoce a tu Psicóloga",
-        heroTrustTP: "Tarjeta Profesional N.° 223511",
-        heroTrust1: "Secreto profesional y confidencialidad 100%",
-        proof1Title: "Virtual & Presencial",
-        proof1Desc: "Atención virtual para Colombia y el exterior, y consultorio en Barranquilla con cita previa.",
-        proof2Title: "Flexibilidad de Horarios",
-        proof2Desc: "Escoge tu horario preferido. Citas programadas según disponibilidad de agenda.",
-        proof3Title: "Atención Ética & Cercana",
-        proof3Desc: "Espacio seguro, confidencial y sin juicios, centrado plenamente en tu bienestar y ritmo.",
+        navAbout: "Acerca de Mí",
+        headerCTA: "Reservar Cita",
+        heroEyebrow: "PSICÓLOGA UNIMAGDALENA · M.SC. EN PSICOLOGÍA EN LAS ORGANIZACIONES · T.P. 223511",
+        heroTitle1: "Tu Camino al Bienestar",
+        heroTitle2: "Mental Comienza Aquí",
+        heroIntro: "Servicios psicológicos profesionales adaptados a tus necesidades únicas. Modalidad <strong>Virtual</strong> para Colombia y el exterior, y <strong>Presencial en Barranquilla</strong> (sujetas a disponibilidad de agenda).",
+        heroPrimaryBtn: "Reservar Cita",
+        heroSecondaryBtn: "Conocer Más",
+        heroTrustTP: "Tarjeta Profesional Colpsic N.° 223511",
+        heroTrust1: "Secreto profesional sanitario 100%",
+        proof1Title: "Virtual & Presencial Barranquilla",
         methodEyebrow: "EL CAMINO TERAPÉUTICO",
         methodTitle: "Cómo trabajaremos juntos paso a paso",
         methodSubtitle: "Un proceso estructurado bajo la premisa de Escuchar, Comprender y Acompañar en modalidad virtual y presencial.",
@@ -1043,15 +995,13 @@
         faqEyebrow: "RESOLVEMOS TUS DUDAS",
         faqTitle: "Preguntas frecuentes sobre la atención psicológica",
         faq1Q: "¿En qué modalidades atiendes y cómo funciona la consulta virtual?",
-        faq1A: "Ofrezco dos modalidades de atención: Modalidad Virtual para Barranquilla, toda Colombia y el exterior; y Modalidad Presencial en consultorio en Barranquilla, ambas sujetas a disponibilidad de agenda. En modalidad virtual te conectas cómodamente desde tu espacio con el mismo rigor ético y calidez humana que en presencial.",
+        faq1A: "Ofrezco dos modalidades de atención: Modalidad Virtual para Barranquilla, toda Colombia y el exterior; y Modalidad Presencial en consultorio en Barranquilla, ambas sujetas a disponibilidad de agenda. En modalidad virtual te conectas cómodamente desde tu espacio con el mismo rigor ético y calidez clínica que en presencial.",
         faq2Q: "¿Qué garantía de confidencialidad tengo en una sesión virtual?",
         faq2A: "Absoluta. La atención virtual es completamente confidencial y segura. Todo lo conversado está respaldado por el secreto profesional sanitario y el Código Deontológico y Bioético de la Psicología en Colombia. Tu privacidad está 100% protegida.",
         aboutEyebrow: "CONOCE A TU PSICÓLOGA",
         aboutTitle: "Hola, soy Jessica Prieto.",
-        aboutDegree: "Psicóloga · Universidad del Magdalena",
-        aboutMaster: "Magíster en Psicología en las Organizaciones",
-        aboutLicenseCard: "Tarjeta Profesional N.° 223511 · Colegio Colombiano de Psicólogos (Colpsic)",
-        aboutLicense: "Modalidad Virtual & Presencial Barranquilla (Sujeta a disponibilidad)",
+        aboutDegree: "Universidad del Magdalena",
+        aboutMaster: "Magíster en Psicología Org.",
         aboutP1: "Sé lo desafiante que puede ser dar el primer paso y buscar ayuda. Muchas personas llegan a consulta con una sobrecarga silenciosa, sintiendo la presión constante de 'poder con todo' o cargando un diálogo interno crítico que desgasta su energía vital.",
         aboutP2: "Soy psicóloga graduada de la <strong>Universidad del Magdalena</strong> con <strong>Maestría en Psicología en las Organizaciones</strong>. Ofrezco atención en <strong>modalidad Virtual</strong> para consultantes en Barranquilla, toda Colombia y el exterior, además de atención <strong>Presencial en Barranquilla</strong>. Todas las consultas y horarios están <strong>sujetos a disponibilidad de agenda</strong>, asegurando una atención cercana, ética y personalizada. Mi enfoque se resume en mi compromiso: <strong>Escucha, Comprende y Acompaña</strong>.",
         aboutQuote: ""La terapia no busca arreglarte porque no estás roto; busca brindarte un lugar seguro donde puedas escucharte, comprenderte y reconstruir tu bienestar emocional con paz y firmeza."",
@@ -1082,28 +1032,23 @@
         footerRights: "Todos los derechos reservados."
       },
       en: {
-        topBarNotice: "Virtual Modality (Colombia & Abroad) · In-Person Barranquilla · Subject to availability",
+        topBarNotice: "Virtual Modality (Colombia & Abroad) · In-Person Barranquilla · Subject to schedule availability",
         topBarLink: "Request Consultation",
         navMethod: "Method",
-        navSpecialties: "Therapy Areas",
+        navSpecialties: "Services",
         navTestimonials: "Experiences",
         navFAQ: "FAQ",
-        navAbout: "About Jessica",
+        navAbout: "About Me",
         headerCTA: "Book Session",
-        heroEyebrow: "PSYCHOLOGIST UNIMAGDALENA · M.SC. IN ORGANIZATIONAL PSYCHOLOGY",
-        heroTitle1: "A safe space to",
-        heroTitle2: "heal, understand yourself, and thrive.",
-        heroIntro: "Psychological care in <strong>Mental Health and Emotional Well-Being</strong> by <strong>Jessica Prieto</strong>, licensed psychologist from <strong>Universidad del Magdalena</strong> with a <strong>Master's in Organizational Psychology</strong>. Available in <strong>Virtual modality</strong> for Colombia and worldwide, and <strong>In-Person in Barranquilla</strong> (subject to schedule availability). An ethical, judgment-free space at your own pace.",
-        heroPrimaryBtn: "Book Psychological Session",
-        heroSecondaryBtn: "Meet Your Psychologist",
+        heroEyebrow: "PSYCHOLOGIST UNIMAGDALENA · M.SC. IN ORGANIZATIONAL PSYCHOLOGY · LICENSE 223511",
+        heroTitle1: "Your Pathway to Mental",
+        heroTitle2: "Well-Being Starts Here",
+        heroIntro: "Professional psychological services tailored to your unique needs. Available in <strong>Virtual modality</strong> for Colombia and worldwide, and <strong>In-Person in Barranquilla</strong> (subject to schedule availability).",
+        heroPrimaryBtn: "Book Session",
+        heroSecondaryBtn: "Learn More",
         heroTrustTP: "Professional License No. 223511",
         heroTrust1: "100% medical confidentiality",
-        proof1Title: "Virtual & In-Person",
-        proof1Desc: "Virtual sessions worldwide and private practice in Barranquilla by appointment.",
-        proof2Title: "Flexible Scheduling",
-        proof2Desc: "Choose your preferred schedule. Sessions scheduled subject to calendar availability.",
-        proof3Title: "Ethical & Compassionate Care",
-        proof3Desc: "A safe, confidential, judgment-free space centered on your personal well-being.",
+        proof1Title: "Virtual & In-Person Barranquilla",
         methodEyebrow: "THE THERAPEUTIC PATHWAY",
         methodTitle: "How we will work together step by step",
         methodSubtitle: "A structured process rooted in Listening, Understanding, and Accompanying both virtually and in-person.",
@@ -1135,10 +1080,8 @@
         faq2A: "Absolute. Virtual sessions are entirely confidential and secure. Every conversation is protected under medical confidentiality and the Code of Ethics of Psychology in Colombia.",
         aboutEyebrow: "MEET YOUR PSYCHOLOGIST",
         aboutTitle: "Hello, I'm Jessica Prieto.",
-        aboutDegree: "Psychologist · Universidad del Magdalena",
+        aboutDegree: "Universidad del Magdalena",
         aboutMaster: "M.Sc. in Organizational Psychology",
-        aboutLicenseCard: "Professional License No. 223511 · Colombian College of Psychologists (Colpsic)",
-        aboutLicense: "Virtual & In-Person Modality (Subject to availability)",
         aboutP1: "I know how challenging taking the first step can be. Many people arrive feeling exhausted from trying to 'keep everything under control', overwhelmed by an unrelenting inner critic.",
         aboutP2: "I am a psychologist graduated from <strong>Universidad del Magdalena</strong> with a <strong>Master's in Organizational Psychology</strong>. I offer psychological care in <strong>Virtual modality</strong> for clients in Barranquilla, Colombia, and abroad, as well as <strong>In-Person care in Barranquilla</strong>. All consultations and hours are <strong>subject to schedule availability</strong>, ensuring warm, ethical, and dedicated support. My core commitment: <strong>Listen, Understand, and Accompany</strong>.",
         aboutQuote: ""Therapy is not about fixing you because you are not broken; it is about providing a safe space where you can listen to yourself, understand your emotions, and rebuild your peace."",
@@ -1180,11 +1123,11 @@
       const btnEs = document.getElementById('lang-es');
       const btnEn = document.getElementById('lang-en');
       if (lang === 'es') {
-        btnEs.className = "px-2.5 py-1 rounded-full bg-white shadow-warm-sm text-brand-plum transition-all";
-        btnEn.className = "px-2.5 py-1 rounded-full text-brand-stone hover:text-brand-plum transition-all";
+        btnEs.className = "px-2.5 py-1 rounded-full bg-white shadow-xs text-brand-purple transition-all";
+        btnEn.className = "px-2.5 py-1 rounded-full text-brand-muted hover:text-brand-purple transition-all";
       } else {
-        btnEn.className = "px-2.5 py-1 rounded-full bg-white shadow-warm-sm text-brand-plum transition-all";
-        btnEs.className = "px-2.5 py-1 rounded-full text-brand-stone hover:text-brand-plum transition-all";
+        btnEn.className = "px-2.5 py-1 rounded-full bg-white shadow-xs text-brand-purple transition-all";
+        btnEs.className = "px-2.5 py-1 rounded-full text-brand-muted hover:text-brand-purple transition-all";
       }
 
       document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -1200,6 +1143,14 @@
     if (dateInput) {
       const today = new Date().toISOString().split('T')[0];
       dateInput.min = today;
+    }
+
+    // Manejo de cookies banner
+    function dismissCookies() {
+      const banner = document.getElementById('cookie-banner');
+      if (banner) {
+        banner.style.display = 'none';
+      }
     }
 
     // Manejo de envío del formulario de contacto hacia WhatsApp
@@ -1262,10 +1213,10 @@
         const content = document.getElementById(`tab-${t}-content`);
         if (btn && content) {
           if (t === tab) {
-            btn.className = "py-3 px-4 border-b-2 border-brand-plum text-brand-plum font-bold";
+            btn.className = "py-3 px-4 border-b-2 border-brand-purple text-brand-purple font-bold";
             content.classList.remove('hidden');
           } else {
-            btn.className = "py-3 px-4 border-b-2 border-transparent text-brand-stone hover:text-brand-plum";
+            btn.className = "py-3 px-4 border-b-2 border-transparent text-brand-muted hover:text-brand-purple";
             content.classList.add('hidden');
           }
         }
